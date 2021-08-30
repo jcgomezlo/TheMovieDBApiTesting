@@ -1,0 +1,8 @@
+entities\lists\ListsDataProvider.class
+entities\lists\ListCreation.class
+entities\authentication\Authentication.class
+Search.class
+entities\authentication\AuthenticationAPI.class
+entities\authentication\AuthenticationTests.class
+data\MoviesProvider.class
+entities\authentication\AuthenticationDataProvider.class

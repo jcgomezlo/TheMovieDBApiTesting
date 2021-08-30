@@ -12,7 +12,7 @@
             </run>
         </groups>
         <classes>
-            <class name="Authentication" />
+            <class name="AuthenticationTests" />
         </classes>
     </test>
 </suite>

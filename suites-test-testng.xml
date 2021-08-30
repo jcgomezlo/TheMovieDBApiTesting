@@ -4,7 +4,7 @@
     <test name="Suit">
         <parameter name="test-name" value="Test One"/>
         <classes>
-            <class name="Authentication" />
+            <class name="AuthenticationTests" />
             <class name="ListCreation" />
             <class name="Search" />
         </classes>

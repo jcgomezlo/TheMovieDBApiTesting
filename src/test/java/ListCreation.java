@@ -1,6 +1,5 @@
-import data.ListsDataProvider;
 import entities.Session;
-import groovy.transform.ToString;
+import entities.lists.ListsDataProvider;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
@@ -8,10 +7,8 @@ import io.restassured.http.ContentType;
 import org.apache.log4j.Logger;
 
 import org.json.simple.JSONObject;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import utils.PathConstructor;
-import data.AuthenticationDataProvider;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;

@@ -66,7 +66,5 @@ public class Session {
                 .path("session_id");
 
          return sessionIdAux;
-
-
     }
 }

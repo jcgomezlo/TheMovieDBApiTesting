@@ -5,6 +5,7 @@ import entities.pojos.UserAuthentication;
 import io.qameta.allure.Step;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import io.restassured.response.ValidatableResponse;
 import org.apache.log4j.Logger;
 import org.json.simple.JSONObject;
 import utils.PathConstructor;
@@ -19,16 +20,14 @@ public class AuthenticationAPI {
     private static Gson gson = new Gson();
 
     @Step("Get request token")
-    public static Response getRequestToken(){
+    public static ValidatableResponse getRequestToken(){
         return given().get(path.getRequestTokenEndPoint())
-                .then()
-                .extract()
-                .response();
+                .then();
     }
 
 
     @Step("Authenticate credentials")
-    public static Response authenticateCredentials(String userName, String password, String requestToken) {
+    public static ValidatableResponse authenticateCredentials(String userName, String password, String requestToken) {
         UserAuthentication user = new UserAuthentication(userName,password,requestToken);
         return given()
                 .contentType(ContentType.JSON)
@@ -36,13 +35,11 @@ public class AuthenticationAPI {
                 .body(gson.toJson(user))
                 .when()
                 .post(path.getSessionWithLoginEndPoint())
-                .then()
-                .extract()
-                .response();
+                .then();
     }
 
     @Step("Get Session Id")
-    public static Response getSessionId(String requestToken){
+    public static ValidatableResponse getSessionId(String requestToken){
         JSONObject request = new JSONObject();
         request.put("request_token",requestToken);
 
@@ -52,9 +49,8 @@ public class AuthenticationAPI {
                 .body(request.toJSONString())
                 .when()
                 .post(path.getNewSessionEndPoint())
-                .then()
-                .extract()
-                .response();
+                .then();
+
     }
 
 

@@ -1,11 +1,10 @@
-import entities.authentication.Authentication;
+import entities.authentication.AuthenticationValidator;
 import entities.authentication.AuthenticationDataProvider;
 import org.apache.log4j.Logger;
 
 import org.testng.annotations.Test;
 import utils.PathConstructor;
 
-import static io.restassured.RestAssured.given;
 
 public class AuthenticationTests extends AuthenticationDataProvider {
 
@@ -15,12 +14,15 @@ public class AuthenticationTests extends AuthenticationDataProvider {
    @Test(dataProvider = "ValidCredentials")
     public void loginSuccessful(String userName, String password){
        LOGGER.info("loginSuccessful Test");
-        Authentication.loginWithValidCredentials(userName,password);
+       String requestToken = AuthenticationValidator.validateRequestToken();
+       AuthenticationValidator.validateCredentialAuthentication(userName, password, requestToken, true);
+       AuthenticationValidator.validateNewSession(requestToken);
     }
 
     @Test(dataProvider = "InvalidCredentials")
-    public void loginInvalid(String username, String password){
+    public void loginInvalid(String userName, String password){
         LOGGER.info("loginInvalid Test");
-        Authentication.loginWithInvalidCredentials(username,password);
+        String requestToken = AuthenticationValidator.validateRequestToken();
+        AuthenticationValidator.validateCredentialAuthentication(userName, password, requestToken, false);
     }
 }

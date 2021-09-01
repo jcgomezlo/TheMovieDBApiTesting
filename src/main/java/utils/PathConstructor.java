@@ -8,7 +8,7 @@ public class PathConstructor {
 
     public static void main(String[] args){
         PathConstructor pathConstructor = new PathConstructor();
-        System.out.println(pathConstructor.getRequestTokenEndPoint());
+        System.out.println(pathConstructor.getNewSessionEndPoint());
     }
 
     public PathConstructor(){

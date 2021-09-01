@@ -7,6 +7,5 @@ public class ListsDataProvider {
     @DataProvider(name = "ListValid")
     public Object[][] ListValid() {
         return DataDeliver.getInstance("data/data.xlsx").getData("Lists");
-
     }
 }

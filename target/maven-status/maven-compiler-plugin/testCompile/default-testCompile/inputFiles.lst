@@ -1,8 +1,9 @@
 C:\Users\jcgomez\IdeaProjects\TheMovieDBApiTesting\src\test\java\data\MoviesProvider.java
-C:\Users\jcgomez\IdeaProjects\TheMovieDBApiTesting\src\test\java\entities\authentication\AuthenticationTests.java
-C:\Users\jcgomez\IdeaProjects\TheMovieDBApiTesting\src\test\java\entities\lists\ListCreation.java
+C:\Users\jcgomez\IdeaProjects\TheMovieDBApiTesting\src\test\java\entities\Validators.java
+C:\Users\jcgomez\IdeaProjects\TheMovieDBApiTesting\src\test\java\AuthenticationTests.java
 C:\Users\jcgomez\IdeaProjects\TheMovieDBApiTesting\src\test\java\entities\authentication\AuthenticationDataProvider.java
 C:\Users\jcgomez\IdeaProjects\TheMovieDBApiTesting\src\test\java\Search.java
-C:\Users\jcgomez\IdeaProjects\TheMovieDBApiTesting\src\test\java\entities\authentication\Authentication.java
 C:\Users\jcgomez\IdeaProjects\TheMovieDBApiTesting\src\test\java\entities\authentication\AuthenticationAPI.java
+C:\Users\jcgomez\IdeaProjects\TheMovieDBApiTesting\src\test\java\entities\authentication\AuthenticationValidator.java
 C:\Users\jcgomez\IdeaProjects\TheMovieDBApiTesting\src\test\java\entities\lists\ListsDataProvider.java
+C:\Users\jcgomez\IdeaProjects\TheMovieDBApiTesting\src\test\java\ListCreation.java

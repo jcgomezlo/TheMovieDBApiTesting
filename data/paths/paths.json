@@ -1,0 +1,21 @@
+{
+  "authentication":{
+    "base": "/authentication",
+    "createRequestToken": "/token/new",
+    "createSessionWithLogin": "/token/validate_with_login",
+    "createSession": "/token/validate_with_login"
+  },
+  "lists":{
+    "base": "/list",
+    "getDetails": "",
+    "createList": "",
+    "addMovie": "/add_item",
+    "clearList": "/clear",
+    "deleteList": ""
+  },
+  "movies":{
+    "base": "/movie",
+    "getDetails": "",
+    "rateMovie": "/rating"
+  }
+}

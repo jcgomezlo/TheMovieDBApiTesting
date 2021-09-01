@@ -1,5 +1,5 @@
-import entities.authentication.AuthenticationValidator;
-import entities.authentication.AuthenticationDataProvider;
+import authentication.AuthenticationValidator;
+import authentication.AuthenticationDataProvider;
 import org.apache.log4j.Logger;
 
 import org.testng.annotations.Test;

@@ -1,10 +1,8 @@
-package entities.authentication;
+package authentication;
 
 import com.google.gson.Gson;
 import entities.pojos.UserAuthentication;
-import io.qameta.allure.Step;
 import io.restassured.http.ContentType;
-import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import org.apache.log4j.Logger;
 import org.json.simple.JSONObject;
@@ -19,14 +17,14 @@ public class AuthenticationAPI {
     private static Logger LOGGER = Logger.getLogger(AuthenticationAPI.class);
     private static Gson gson = new Gson();
 
-    @Step("Get request token")
+
     public static ValidatableResponse getRequestToken(){
         return given().get(path.getRequestTokenEndPoint())
                 .then();
     }
 
 
-    @Step("Authenticate credentials")
+
     public static ValidatableResponse authenticateCredentials(String userName, String password, String requestToken) {
         UserAuthentication user = new UserAuthentication(userName,password,requestToken);
         return given()
@@ -38,7 +36,7 @@ public class AuthenticationAPI {
                 .then();
     }
 
-    @Step("Get Session Id")
+
     public static ValidatableResponse getSessionId(String requestToken){
         JSONObject request = new JSONObject();
         request.put("request_token",requestToken);

@@ -1,4 +1,4 @@
-package entities.authentication;
+package authentication;
 
 import org.testng.annotations.DataProvider;
 import utils.DataDeliver;

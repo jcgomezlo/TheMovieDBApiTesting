@@ -1,11 +1,16 @@
 package entities;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import entities.pojos.Route;
 import io.qameta.allure.Step;
 import io.restassured.http.ContentType;
 import org.apache.log4j.Logger;
 import org.json.simple.JSONObject;
 import utils.DataDeliver;
 import utils.PathConstructor;
+
+import java.io.File;
+import java.io.IOException;
 
 import static io.restassured.RestAssured.given;
 public class Session {
@@ -15,7 +20,21 @@ public class Session {
     private static Logger LOGGER = Logger.getLogger(Session.class);
 
     public static void main(String[] args){
-        System.out.println(  );
+        ObjectMapper mapper = new ObjectMapper();
+        try {
+
+            // JSON file to Java object
+            Route staff = mapper.readValue(new File("data/paths/paths.json"), Route.class);
+
+            // pretty print
+            String prettyStaff1 = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(staff);
+
+            System.out.println(prettyStaff1);
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public static String getSession(){

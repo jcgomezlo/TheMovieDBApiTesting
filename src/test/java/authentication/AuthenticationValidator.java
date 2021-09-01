@@ -30,12 +30,15 @@ public class AuthenticationValidator extends Validator {
         LOGGER.info("Authenticate credentials " + requestToken );
         ValidatableResponse res = AuthenticationAPI.authenticateCredentials(userName,password,requestToken);
         attributeOfBodyEquals(res,SUCCESS_BODY,isValid);
+
         if(isValid){
             statusCodeEquals(res,HttpStatus.SC_OK);
-        } else {
-            statusCodeEquals(res,HttpStatus.SC_UNAUTHORIZED);
-            attributeOfBodyEquals(res,"status_message",ERROR_CREDENTIALS);
+            return;
         }
+
+        statusCodeEquals(res,HttpStatus.SC_UNAUTHORIZED);
+        attributeOfBodyEquals(res,"status_message",ERROR_CREDENTIALS);
+
     }
 
     @Step("Validate Session Id")

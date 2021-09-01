@@ -1,4 +1,5 @@
 {
+  "base": "https://api.themoviedb.org/3",
   "authentication":{
     "base": "/authentication",
     "createRequestToken": "/token/new",
@@ -7,15 +8,11 @@
   },
   "lists":{
     "base": "/list",
-    "getDetails": "",
-    "createList": "",
     "addMovie": "/add_item",
-    "clearList": "/clear",
-    "deleteList": ""
+    "clearList": "/clear"
   },
   "movies":{
     "base": "/movie",
-    "getDetails": "",
     "rateMovie": "/rating"
   }
 }

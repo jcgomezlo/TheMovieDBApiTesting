@@ -13,7 +13,6 @@ public class AuthenticationTests extends AuthenticationDataProvider {
 
    @Test(dataProvider = "ValidCredentials")
     public void loginSuccessful(String userName, String password){
-       LOGGER.info("loginSuccessful Test");
        String requestToken = AuthenticationValidator.validateRequestToken();
        AuthenticationValidator.validateCredentialAuthentication(userName, password, requestToken, true);
        AuthenticationValidator.validateNewSession(requestToken);
@@ -21,7 +20,6 @@ public class AuthenticationTests extends AuthenticationDataProvider {
 
     @Test(dataProvider = "InvalidCredentials")
     public void loginInvalid(String userName, String password){
-        LOGGER.info("loginInvalid Test");
         String requestToken = AuthenticationValidator.validateRequestToken();
         AuthenticationValidator.validateCredentialAuthentication(userName, password, requestToken, false);
     }

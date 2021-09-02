@@ -10,14 +10,13 @@ import java.util.Map;
 
 public class ExcelUtils {
 
-    private XSSFWorkbook workbook;
     private Map<String,Sheet> sheets;
     private DataFormatter formatter;
 
     public ExcelUtils(String path){
         try {
-            workbook = new XSSFWorkbook(path);
-            sheets = new HashMap<String, Sheet>();
+            XSSFWorkbook workbook = new XSSFWorkbook(path);
+            sheets = new HashMap<>();
 
             for(Sheet sheet: workbook) {
                 sheets.put(sheet.getSheetName(),sheet);
@@ -30,8 +29,7 @@ public class ExcelUtils {
     }
 
     public Object getCellData(String sheetName, int rowNum, int colNum){
-            Object value = formatter.formatCellValue(sheets.get(sheetName).getRow(rowNum).getCell(colNum));
-            return value;
+        return formatter.formatCellValue(sheets.get(sheetName).getRow(rowNum).getCell(colNum));
 
     }
 

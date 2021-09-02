@@ -1,7 +1,13 @@
-utils\Path.class
+entities\pojos\MovieRoute.class
+utils\reader\ExcelUtils.class
+entities\pojos\AuthenticationRoute.class
+utils\reader\JSONReader.class
+entities\pojos\ListRoute.class
+entities\pojos\List.class
+entities\pojos\Route.class
+utils\RouteInstance.class
 utils\reader\PropertiesReader.class
 entities\pojos\UserAuthentication.class
 utils\PathConstructor.class
-utils\reader\ExcelUtils.class
 entities\Session.class
 utils\DataDeliver.class

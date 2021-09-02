@@ -9,9 +9,8 @@ public class AuthenticationDataProvider {
     @DataProvider(name = "ValidCredentials")
     public Object[][] ValidCredentials() {
         return new Object[][]{
-                {System.getenv("USER1_MOVIEDB"), System.getenv("PASS1_MOVIEDB")}
+                {AuthenticationUtils.USER_ENV, AuthenticationUtils.PASSWORD_ENV}
         };
-
     }
 
     @DataProvider(name = "InvalidCredentials")

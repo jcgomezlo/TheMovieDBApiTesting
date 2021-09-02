@@ -5,8 +5,7 @@
         <parameter name="test-name" value="Test One"/>
         <classes>
             <class name="AuthenticationTests" />
-            <class name="ListCreation" />
-            <class name="Search" />
+            <class name="ListTests" />
         </classes>
     </test>
 </suite>

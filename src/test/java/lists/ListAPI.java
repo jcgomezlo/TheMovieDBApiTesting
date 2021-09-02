@@ -1,14 +1,11 @@
 package lists;
 
-import authentication.AuthenticationAPI;
 import authentication.AuthenticationUtils;
 import com.google.gson.Gson;
 import entities.Session;
 import entities.pojos.List;
-import entities.pojos.UserAuthentication;
 import io.restassured.http.ContentType;
 import io.restassured.response.ValidatableResponse;
-import org.apache.log4j.Logger;
 import org.json.simple.JSONObject;
 import utils.PathConstructor;
 
@@ -27,6 +24,36 @@ public class ListAPI {
                 .body(gson.toJson(list))
                 .when()
                 .post(path.getListEndPoint(AuthenticationUtils.getSessionId()))
+                .then();
+    }
+
+    public static ValidatableResponse getListDetails(String id) {
+        return given()
+                .contentType(ContentType.JSON)
+                .accept(ContentType.JSON)
+                .when()
+                .get(path.getDetailsOfList(id))
+                .then();
+    }
+
+    public static ValidatableResponse postMovieToList(int listId, String movieId) {
+        JSONObject request = new JSONObject();
+        request.put("media_id",movieId);
+        return given()
+                .contentType(ContentType.JSON)
+                .accept(ContentType.JSON)
+                .body(request.toJSONString())
+                .when()
+                .post(path.getAddMovieToListEndPoint(AuthenticationUtils.getSessionId(), String.valueOf(listId)))
+                .then();
+    }
+
+    public static ValidatableResponse postClearList(int listId) {
+        return given()
+                .contentType(ContentType.JSON)
+                .accept(ContentType.JSON)
+                .when()
+                .post(path.getClearListListEndPoint(AuthenticationUtils.getSessionId(), String.valueOf(listId)))
                 .then();
     }
 

@@ -8,4 +8,9 @@ public class ListsDataProvider {
     public Object[][] ListValid() {
         return DataDeliver.getInstance("data/data.xlsx").getData("Lists");
     }
+
+    @DataProvider(name = "ListDetails")
+    public Object[][] ListDetails() {
+        return DataDeliver.getInstance("data/data.xlsx").getData("ListDetails");
+    }
 }

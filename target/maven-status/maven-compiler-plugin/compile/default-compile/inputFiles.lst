@@ -1,7 +1,13 @@
+C:\Users\jcgomez\IdeaProjects\TheMovieDBApiTesting\src\main\java\entities\pojos\List.java
 C:\Users\jcgomez\IdeaProjects\TheMovieDBApiTesting\src\main\java\utils\DataDeliver.java
-C:\Users\jcgomez\IdeaProjects\TheMovieDBApiTesting\src\main\java\utils\Path.java
+C:\Users\jcgomez\IdeaProjects\TheMovieDBApiTesting\src\main\java\utils\RouteInstance.java
+C:\Users\jcgomez\IdeaProjects\TheMovieDBApiTesting\src\main\java\entities\pojos\AuthenticationRoute.java
+C:\Users\jcgomez\IdeaProjects\TheMovieDBApiTesting\src\main\java\entities\pojos\MovieRoute.java
+C:\Users\jcgomez\IdeaProjects\TheMovieDBApiTesting\src\main\java\utils\reader\ExcelUtils.java
+C:\Users\jcgomez\IdeaProjects\TheMovieDBApiTesting\src\main\java\entities\pojos\ListRoute.java
+C:\Users\jcgomez\IdeaProjects\TheMovieDBApiTesting\src\main\java\entities\pojos\Route.java
+C:\Users\jcgomez\IdeaProjects\TheMovieDBApiTesting\src\main\java\utils\reader\JSONReader.java
 C:\Users\jcgomez\IdeaProjects\TheMovieDBApiTesting\src\main\java\utils\reader\PropertiesReader.java
 C:\Users\jcgomez\IdeaProjects\TheMovieDBApiTesting\src\main\java\utils\PathConstructor.java
 C:\Users\jcgomez\IdeaProjects\TheMovieDBApiTesting\src\main\java\entities\Session.java
 C:\Users\jcgomez\IdeaProjects\TheMovieDBApiTesting\src\main\java\entities\pojos\UserAuthentication.java
-C:\Users\jcgomez\IdeaProjects\TheMovieDBApiTesting\src\main\java\utils\reader\ExcelUtils.java

@@ -15,11 +15,19 @@ pipeline {
             steps {
                 sh 'mvn test'
             }
-            post {
-                always {
-                    junit 'target/surefire-reports/*.xml'
-                }
-            }
+           post {
+                     always {
+                       script {
+                         allure([
+                           includeProperties: false,
+                           jdk: '',
+                           properties: [],
+                           reportBuildPolicy: 'ALWAYS',
+                           results: [[path: 'target/allure-results']]
+                         ])
+                       }
+                     }
+                   }
         }
     }
 }

@@ -33,6 +33,16 @@ public class ListUtils {
 
     }
 
+    @Step("Validate Status Message")
+    public static void assertStatusMessageValue(ValidatableResponse res, String expected){
+        attributeOfBodyEquals(res,STATUS_MESSAGE_PAYLOAD,expected);
+    }
+
+    @Step("Validate List Id Not Null")
+    public static void assertListIdNotNull(ValidatableResponse res){
+        attributeOfBodyNotNull(res,LIST_ID_PAYLOAD);
+    }
+
     @Step("Add Movie To List")
     public static int addMovieToList(String name, String description, String language, String movieId){
         int id = getListId(name, description, language);

@@ -3,12 +3,11 @@ import authentication.AuthenticationDataProvider;
 import org.apache.log4j.Logger;
 
 import org.testng.annotations.Test;
-import utils.PathConstructor;
 
 
-public class AuthenticationTests extends AuthenticationDataProvider {
+public class AuthenticationTest extends AuthenticationDataProvider {
 
-    private static Logger LOGGER = Logger.getLogger(AuthenticationTests.class);
+    private static Logger LOGGER = Logger.getLogger(AuthenticationTest.class);
 
    @Test(dataProvider = "ValidCredentials")
     public void loginSuccessful(String userName, String password){

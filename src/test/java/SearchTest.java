@@ -9,10 +9,10 @@ import utils.PathConstructor;
 
 import static entities.Validator.*;
 
-public class Search extends MoviesProvider {
+public class SearchTest extends MoviesProvider {
 
     private static PathConstructor path = new PathConstructor();
-    private static Logger LOGGER = Logger.getLogger(Search.class);
+    private static Logger LOGGER = Logger.getLogger(SearchTest.class);
 
     @Test(dataProvider = "Movies")
     public void search(String movie){

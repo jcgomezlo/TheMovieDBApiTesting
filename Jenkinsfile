@@ -13,21 +13,17 @@ pipeline {
         }
         stage('Test') {
             steps {
-             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                sh 'mvn test'
-                stash name: 'allure-results', includes: 'target/allure-results/*' // save results
-                 }
+                sh 'mvn test -Dmaven.test.failure.ignore=true'
+                stash name: 'allure-results', includes: 'allure-results/*' // save results
             }
-
+            post {
+                 always {
+                    unstash 'allure-results' //extract results
+                    allure results: [[path: 'allure-results']]
+                }
+            }
         }
-        stage('reports') {
-    steps {
-    script {
-            unstash 'allure-results' //extract results
-            allure results: [[path: 'target/allure-results']]
-    }
-    }
-}
+
     }
 
 }

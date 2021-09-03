@@ -18,6 +18,11 @@ public class Validator {
         statusCodeEquals(res, HttpStatus.SC_CREATED);
     }
 
+    public static void assertStatusCodeUnauthorized(ValidatableResponse res){
+        statusCodeEquals(res, HttpStatus.SC_UNAUTHORIZED);
+    }
+
+
     @Step("Validate Status Code")
     public static void statusCodeEquals(ValidatableResponse res, int code){
         res.assertThat().statusCode(code);

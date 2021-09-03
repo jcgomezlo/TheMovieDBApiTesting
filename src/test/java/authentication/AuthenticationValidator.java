@@ -15,14 +15,7 @@ public class AuthenticationValidator {
     private static Logger LOGGER = Logger.getLogger(AuthenticationValidator.class);
 
 
-    @Step("Validate Request Token")
-    public static String validateRequestToken(){
-        LOGGER.info("Get Request Token");
-        ValidatableResponse res = AuthenticationAPI.getRequestToken();
-        statusCodeEquals(res, HttpStatus.SC_OK);
-        attributeOfBodyNotNull(res,REQUEST_TOKEN_PAYLOAD);
-        return res.extract().path(REQUEST_TOKEN_PAYLOAD);
-    }
+
 
     @Step("Validate Credentials")
     public static void validateCredentialAuthentication(String userName, String password,String requestToken,boolean isValid){

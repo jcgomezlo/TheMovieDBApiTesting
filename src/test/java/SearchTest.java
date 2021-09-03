@@ -5,13 +5,11 @@ import org.apache.log4j.Logger;
 import org.testng.annotations.Test;
 import search.SearchAPI;
 import search.SearchUtils;
-import utils.PathConstructor;
 
 import static entities.Validator.*;
 
 public class SearchTest extends MoviesProvider {
 
-    private static PathConstructor path = new PathConstructor();
     private static Logger LOGGER = Logger.getLogger(SearchTest.class);
 
     @Test(dataProvider = "Movies")

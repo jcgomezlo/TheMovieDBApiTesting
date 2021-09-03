@@ -13,17 +13,14 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'mvn test -Dmaven.test.failure.ignore=true'
-                stash name: 'allure-results', includes: 'allure-results/*' // save results
+                sh 'mvn test'
             }
-            post {
-                 always {
-                    unstash 'allure-results' //extract results
-                    allure results: [[path: 'allure-results']]
-                }
-            }
+             post {
+                            always {
+                                junit 'target/surefire-reports/*.xml'
+                            }
+                        }
+
         }
-
     }
-
 }

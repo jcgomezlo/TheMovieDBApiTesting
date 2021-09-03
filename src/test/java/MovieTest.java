@@ -12,7 +12,7 @@ public class MovieTest extends MoviesProvider {
 
     @Test(dataProvider = "MovieDetails")
     public void getDetailsOfMovie(String id, String title, String genre){
-        ValidatableResponse response = MovieAPI.getListDetails(id);
+        ValidatableResponse response = MovieAPI.getMovieDetails(id);
         MovieUtils.assertTitleOfMovie(response,title);
         MovieUtils.assertGenreOfMovie(response,genre);
         Validator.assertStatusCodeOK(response);

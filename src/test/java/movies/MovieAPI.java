@@ -11,7 +11,7 @@ import static io.restassured.RestAssured.given;
 public class MovieAPI {
     private static PathConstructor path = new PathConstructor();
 
-    public static ValidatableResponse getListDetails(String id) {
+    public static ValidatableResponse getMovieDetails(String id) {
         return given()
                 .contentType(ContentType.JSON)
                 .accept(ContentType.JSON)

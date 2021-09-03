@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="40.409" tests="14" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="24.037" tests="12" errors="0" skipped="0" failures="2">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_301\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\jcgomez\AppData\Local\Temp\surefire1436148144251435507\surefirebooter8270920773142586248.jar C:\Users\jcgomez\AppData\Local\Temp\surefire1436148144251435507 2021-09-02T22-56-45_181-jvmRun1 surefire6927512797012959155tmp surefire_01797457418015157814tmp"/>
+    <property name="sun.java.command" value="C:\Users\jcgomez\AppData\Local\Temp\surefire7344692315533153293\surefirebooter719828817116236160.jar C:\Users\jcgomez\AppData\Local\Temp\surefire7344692315533153293 2021-09-03T08-26-01_665-jvmRun1 surefire2066964016825212307tmp surefire_02082181309866596692tmp"/>
     <property name="surefire.test.class.path" value="C:\Users\jcgomez\IdeaProjects\TheMovieDBApiTesting\target\test-classes;C:\Users\jcgomez\IdeaProjects\TheMovieDBApiTesting\target\classes;C:\Users\jcgomez\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\jcgomez\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\jcgomez\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\jcgomez\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\jcgomez\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\jcgomez\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\jcgomez\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\jcgomez\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\jcgomez\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\jcgomez\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\jcgomez\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\jcgomez\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\jcgomez\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\jcgomez\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\jcgomez\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\jcgomez\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\jcgomez\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\jcgomez\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\jcgomez\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\jcgomez\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\jcgomez\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\jcgomez\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\jcgomez\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\jcgomez\.m2\repository\junit\junit\4.10\junit-4.10.jar;C:\Users\jcgomez\.m2\repository\org\apache\poi\poi-ooxml\5.0.0\poi-ooxml-5.0.0.jar;C:\Users\jcgomez\.m2\repository\org\apache\poi\poi\5.0.0\poi-5.0.0.jar;C:\Users\jcgomez\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\jcgomez\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\jcgomez\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\jcgomez\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\jcgomez\.m2\repository\org\apache\poi\poi-ooxml-lite\5.0.0\poi-ooxml-lite-5.0.0.jar;C:\Users\jcgomez\.m2\repository\org\apache\xmlbeans\xmlbeans\4.0.0\xmlbeans-4.0.0.jar;C:\Users\jcgomez\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\jcgomez\.m2\repository\org\apache\commons\commons-compress\1.20\commons-compress-1.20.jar;C:\Users\jcgomez\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\jcgomez\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.68\bcpkix-jdk15on-1.68.jar;C:\Users\jcgomez\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.68\bcprov-jdk15on-1.68.jar;C:\Users\jcgomez\.m2\repository\org\apache\santuario\xmlsec\2.2.1\xmlsec-2.2.1.jar;C:\Users\jcgomez\.m2\repository\com\fasterxml\woodstox\woodstox-core\5.2.1\woodstox-core-5.2.1.jar;C:\Users\jcgomez\.m2\repository\org\codehaus\woodstox\stax2-api\4.2\stax2-api-4.2.jar;C:\Users\jcgomez\.m2\repository\org\apache\xmlgraphics\batik-all\1.13\batik-all-1.13.jar;C:\Users\jcgomez\.m2\repository\org\apache\xmlgraphics\batik-anim\1.13\batik-anim-1.13.jar;C:\Users\jcgomez\.m2\repository\org\apache\xmlgraphics\batik-shared-resources\1.13\batik-shared-resources-1.13.jar;C:\Users\jcgomez\.m2\repository\xml-apis\xml-apis-ext\1.3.04\xml-apis-ext-1.3.04.jar;C:\Users\jcgomez\.m2\repository\org\apache\xmlgraphics\batik-awt-util\1.13\batik-awt-util-1.13.jar;C:\Users\jcgomez\.m2\repository\org\apache\xmlgraphics\xmlgraphics-commons\2.4\xmlgraphics-commons-2.4.jar;C:\Users\jcgomez\.m2\repository\org\apache\xmlgraphics\batik-bridge\1.13\batik-bridge-1.13.jar;C:\Users\jcgomez\.m2\repository\org\apache\xmlgraphics\batik-codec\1.13\batik-codec-1.13.jar;C:\Users\jcgomez\.m2\repository\org\apache\xmlgraphics\batik-constants\1.13\batik-constants-1.13.jar;C:\Users\jcgomez\.m2\repository\org\apache\xmlgraphics\batik-css\1.13\batik-css-1.13.jar;C:\Users\jcgomez\.m2\repository\org\apache\xmlgraphics\batik-dom\1.13\batik-dom-1.13.jar;C:\Users\jcgomez\.m2\repository\xalan\xalan\2.7.2\xalan-2.7.2.jar;C:\Users\jcgomez\.m2\repository\xalan\serializer\2.7.2\serializer-2.7.2.jar;C:\Users\jcgomez\.m2\repository\org\apache\xmlgraphics\batik-ext\1.13\batik-ext-1.13.jar;C:\Users\jcgomez\.m2\repository\org\apache\xmlgraphics\batik-extension\1.13\batik-extension-1.13.jar;C:\Users\jcgomez\.m2\repository\org\apache\xmlgraphics\batik-gui-util\1.13\batik-gui-util-1.13.jar;C:\Users\jcgomez\.m2\repository\org\apache\xmlgraphics\batik-gvt\1.13\batik-gvt-1.13.jar;C:\Users\jcgomez\.m2\repository\org\apache\xmlgraphics\batik-i18n\1.13\batik-i18n-1.13.jar;C:\Users\jcgomez\.m2\repository\org\apache\xmlgraphics\batik-parser\1.13\batik-parser-1.13.jar;C:\Users\jcgomez\.m2\repository\org\apache\xmlgraphics\batik-rasterizer-ext\1.13\batik-rasterizer-ext-1.13.jar;C:\Users\jcgomez\.m2\repository\org\apache\xmlgraphics\batik-rasterizer\1.13\batik-rasterizer-1.13.jar;C:\Users\jcgomez\.m2\repository\org\apache\xmlgraphics\batik-script\1.13\batik-script-1.13.jar;C:\Users\jcgomez\.m2\repository\org\apache\xmlgraphics\batik-slideshow\1.13\batik-slideshow-1.13.jar;C:\Users\jcgomez\.m2\repository\org\apache\xmlgraphics\batik-squiggle-ext\1.13\batik-squiggle-ext-1.13.jar;C:\Users\jcgomez\.m2\repository\org\apache\xmlgraphics\batik-squiggle\1.13\batik-squiggle-1.13.jar;C:\Users\jcgomez\.m2\repository\org\apache\xmlgraphics\batik-svg-dom\1.13\batik-svg-dom-1.13.jar;C:\Users\jcgomez\.m2\repository\org\apache\xmlgraphics\batik-svgbrowser\1.13\batik-svgbrowser-1.13.jar;C:\Users\jcgomez\.m2\repository\org\apache\xmlgraphics\batik-svggen\1.13\batik-svggen-1.13.jar;C:\Users\jcgomez\.m2\repository\org\apache\xmlgraphics\batik-svgpp\1.13\batik-svgpp-1.13.jar;C:\Users\jcgomez\.m2\repository\org\apache\xmlgraphics\batik-svgrasterizer\1.13\batik-svgrasterizer-1.13.jar;C:\Users\jcgomez\.m2\repository\org\apache\xmlgraphics\batik-swing\1.13\batik-swing-1.13.jar;C:\Users\jcgomez\.m2\repository\org\apache\xmlgraphics\batik-transcoder\1.13\batik-transcoder-1.13.jar;C:\Users\jcgomez\.m2\repository\org\apache\xmlgraphics\batik-util\1.13\batik-util-1.13.jar;C:\Users\jcgomez\.m2\repository\org\apache\xmlgraphics\batik-ttf2svg\1.13\batik-ttf2svg-1.13.jar;C:\Users\jcgomez\.m2\repository\org\apache\xmlgraphics\batik-xml\1.13\batik-xml-1.13.jar;C:\Users\jcgomez\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\Users\jcgomez\.m2\repository\org\apache\pdfbox\pdfbox\2.0.22\pdfbox-2.0.22.jar;C:\Users\jcgomez\.m2\repository\org\apache\pdfbox\fontbox\2.0.22\fontbox-2.0.22.jar;C:\Users\jcgomez\.m2\repository\io\qameta\allure\allure-testng\2.14.0\allure-testng-2.14.0.jar;C:\Users\jcgomez\.m2\repository\io\qameta\allure\allure-java-commons\2.14.0\allure-java-commons-2.14.0.jar;C:\Users\jcgomez\.m2\repository\io\qameta\allure\allure-model\2.14.0\allure-model-2.14.0.jar;C:\Users\jcgomez\.m2\repository\org\apache\tika\tika-core\1.26\tika-core-1.26.jar;C:\Users\jcgomez\.m2\repository\org\jooq\joor-java-8\0.9.14\joor-java-8-0.9.14.jar;C:\Users\jcgomez\.m2\repository\io\qameta\allure\allure-test-filter\2.14.0\allure-test-filter-2.14.0.jar;C:\Users\jcgomez\.m2\repository\ru\yandex\qatools\allure\allure-testng-adaptor\1.5.4\allure-testng-adaptor-1.5.4.jar;C:\Users\jcgomez\.m2\repository\ru\yandex\qatools\allure\allure-java-aspects\1.5.4\allure-java-aspects-1.5.4.jar;C:\Users\jcgomez\.m2\repository\ru\yandex\qatools\allure\allure-java-adaptor-api\1.5.4\allure-java-adaptor-api-1.5.4.jar;C:\Users\jcgomez\.m2\repository\ru\yandex\qatools\allure\allure-java-annotations\1.5.4\allure-java-annotations-1.5.4.jar;C:\Users\jcgomez\.m2\repository\ru\yandex\qatools\allure\allure-model\1.5.4\allure-model-1.5.4.jar;C:\Users\jcgomez\.m2\repository\org\jvnet\jaxb2_commons\jaxb2-basics-runtime\0.9.3\jaxb2-basics-runtime-0.9.3.jar;C:\Users\jcgomez\.m2\repository\ru\qatools\commons\properties\2.0.RC5\properties-2.0.RC5.jar;C:\Users\jcgomez\.m2\repository\org\aspectj\aspectjrt\1.8.3\aspectjrt-1.8.3.jar;C:\Users\jcgomez\.m2\repository\com\aventstack\extentreports\5.0.8\extentreports-5.0.8.jar;C:\Users\jcgomez\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\jcgomez\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\jcgomez\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\jcgomez\.m2\repository\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;C:\Users\jcgomez\.m2\repository\ru\yandex\qatools\ashot\ashot\1.5.4\ashot-1.5.4.jar;C:\Users\jcgomez\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.53.0\selenium-remote-driver-2.53.0.jar;C:\Users\jcgomez\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar;C:\Users\jcgomez\.m2\repository\org\seleniumhq\selenium\selenium-api\2.53.0\selenium-api-2.53.0.jar;C:\Users\jcgomez\.m2\repository\com\google\guava\guava\19.0\guava-19.0.jar;C:\Users\jcgomez\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\jcgomez\.m2\repository\net\java\dev\jna\jna\4.1.0\jna-4.1.0.jar;C:\Users\jcgomez\.m2\repository\net\java\dev\jna\jna-platform\4.1.0\jna-platform-4.1.0.jar;C:\Users\jcgomez\.m2\repository\commons-io\commons-io\2.5\commons-io-2.5.jar;C:\Users\jcgomez\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\jcgomez\.m2\repository\com\google\code\gson\gson\2.8.8\gson-2.8.8.jar;C:\Users\jcgomez\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.12.5\jackson-databind-2.12.5.jar;C:\Users\jcgomez\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.12.5\jackson-annotations-2.12.5.jar;C:\Users\jcgomez\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.12.5\jackson-core-2.12.5.jar;C:\Users\jcgomez\.m2\repository\org\apache\logging\log4j\log4j-api\2.13.3\log4j-api-2.13.3.jar;C:\Users\jcgomez\.m2\repository\org\apache\logging\log4j\log4j-core\2.13.3\log4j-core-2.13.3.jar;C:\Users\jcgomez\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.13.3\log4j-slf4j-impl-2.13.3.jar;C:\Users\jcgomez\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\jcgomez\.m2\repository\org\jetbrains\annotations\22.0.0\annotations-22.0.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\jcgomez"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\jcgomez\AppData\Local\Temp\surefire1436148144251435507\surefirebooter8270920773142586248.jar;C:\Users\jcgomez\.m2\repository/org/aspectj/aspectjweaver/1.9.7/aspectjweaver-1.9.7.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\jcgomez\AppData\Local\Temp\surefire7344692315533153293\surefirebooter719828817116236160.jar;C:\Users\jcgomez\.m2\repository/org/aspectj/aspectjweaver/1.9.7/aspectjweaver-1.9.7.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_301\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_301\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -60,83 +60,73 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="loginInvalid[juankg214, lapiz452](1)" classname="AuthenticationTests" time="1.103">
-    <system-out><![CDATA[2021-09-02 22:56:52 INFO  Hooks:12 - Getting Session ID ...
-2021-09-02 22:57:07 INFO  Hooks:14 - sessionId = 68e2dd419f162ab3ce34f4a4ad55b48bbdc58fd4
-2021-09-02 22:57:08 INFO  AuthenticationTests:23 - Invalid Credentials Login ....
-2021-09-02 22:57:08 INFO  AuthenticationValidator:20 - Get Request Token
-2021-09-02 22:57:09 INFO  AuthenticationValidator:29 - Authenticate credentials dec18ee22970e0396ade48a886fe61314ba75b3f
+  <testcase name="loginInvalid[juankg214, lapiz452](1)" classname="AuthenticationTest" time="0.851">
+    <system-out><![CDATA[2021-09-03 08:26:09 INFO  Hooks:12 - Getting Session ID ...
+2021-09-03 08:26:20 INFO  Hooks:14 - sessionId = 9a45620d6e4dda5aa8310149ad964ed01c45fba0
+2021-09-03 08:26:22 INFO  AuthenticationTest:40 - Invalid Credentials Login ....
+2021-09-03 08:26:22 INFO  AuthenticationTest:42 - Get Request Token
+2021-09-03 08:26:22 INFO  AuthenticationTest:47 - Authenticate credentials bf4aa6a8d4c5bdb74c12fbf0d7d01198a963a59c
 ]]></system-out>
   </testcase>
-  <testcase name="loginInvalid[juankg215, lapiz453](2)" classname="AuthenticationTests" time="0.698">
-    <system-out><![CDATA[2021-09-02 22:57:09 INFO  AuthenticationTests:23 - Invalid Credentials Login ....
-2021-09-02 22:57:09 INFO  AuthenticationValidator:20 - Get Request Token
-2021-09-02 22:57:09 INFO  AuthenticationValidator:29 - Authenticate credentials 6db709e90b73fd8f828bca85c6a127e2db740e9a
+  <testcase name="loginInvalid[juankg215, lapiz453](2)" classname="AuthenticationTest" time="0.534">
+    <system-out><![CDATA[2021-09-03 08:26:23 INFO  AuthenticationTest:40 - Invalid Credentials Login ....
+2021-09-03 08:26:23 INFO  AuthenticationTest:42 - Get Request Token
+2021-09-03 08:26:23 INFO  AuthenticationTest:47 - Authenticate credentials 2479c174d0bf90d53a5a1e50b7ed511585ba656c
 ]]></system-out>
   </testcase>
-  <testcase name="loginSuccessful[juankg214, lapiz453](1)" classname="AuthenticationTests" time="1.285">
+  <testcase name="loginSuccessful[juankg214, lapiz453](1)" classname="AuthenticationTest" time="0.797">
     <failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;401&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
 1 expectation failed.
 Expected status code <200> but was <401>.
 
-	at AuthenticationTests.loginSuccessful(AuthenticationTests.java:18)
+	at AuthenticationTest.loginSuccessful(AuthenticationTest.java:32)
 ]]></failure>
-    <system-out><![CDATA[2021-09-02 22:57:10 INFO  AuthenticationTests:15 - Valid Credentials Login ....
-2021-09-02 22:57:10 INFO  AuthenticationValidator:20 - Get Request Token
-2021-09-02 22:57:10 INFO  AuthenticationValidator:29 - Authenticate credentials 6db709e90b73fd8f828bca85c6a127e2db740e9a
-2021-09-02 22:57:10 INFO  AuthenticationValidator:45 - Get session ID 
+    <system-out><![CDATA[2021-09-03 08:26:23 INFO  AuthenticationTest:18 - Valid Credentials Login ....
+2021-09-03 08:26:23 INFO  AuthenticationTest:20 - Get Request Token
+2021-09-03 08:26:23 INFO  AuthenticationTest:25 - Authenticate credentials 2479c174d0bf90d53a5a1e50b7ed511585ba656c
+2021-09-03 08:26:24 INFO  AuthenticationTest:30 - Get session ID 
 ]]></system-out>
   </testcase>
-  <testcase name="addMovieToList[ListThatNotRepeats, description of no repeat2, JN](1)" classname="ListTests" time="1.154">
-    <system-out><![CDATA[2021-09-02 22:57:11 INFO  ListTests:44 - Add Movie to List Test Started ....
-2021-09-02 22:57:12 INFO  ListTests:47 - List Created successfully
-2021-09-02 22:57:12 INFO  ListTests:52 - Movie Added successfully
-2021-09-02 22:57:12 INFO  ListTests:55 - Movie Showing in details ...
+  <testcase name="addMovieToList[ListThatNotRepeats56, description of no repeat46541, JN](1)" classname="ListTest" time="0.303">
+    <failure message="1 expectation failed.&#10;JSON path list_id doesn&apos;t match.&#10;Expected: not null&#10;  Actual: null&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+JSON path list_id doesn't match.
+Expected: not null
+  Actual: null
+
+	at ListTest.addMovieToList(ListTest.java:44)
+]]></failure>
+    <system-out><![CDATA[2021-09-03 08:26:24 INFO  ListTest:42 - Add Movie to List Test Started ....
 ]]></system-out>
   </testcase>
-  <testcase name="addMovieToList[ThisIsATestList, desc of test list2, ES](2)" classname="ListTests" time="3.156">
-    <system-out><![CDATA[2021-09-02 22:57:12 INFO  ListTests:44 - Add Movie to List Test Started ....
-2021-09-02 22:57:14 INFO  ListTests:47 - List Created successfully
-2021-09-02 22:57:14 INFO  ListTests:52 - Movie Added successfully
-2021-09-02 22:57:15 INFO  ListTests:55 - Movie Showing in details ...
+  <testcase name="clearList[fjdfghujdj, asdafgagaga, JN](1)" classname="ListTest" time="1.331">
+    <system-out><![CDATA[2021-09-03 08:26:24 INFO  ListTest:58 - Clear List Test Started ....
+2021-09-03 08:26:25 INFO  ListTest:61 - List Created and Movie Added ...
+2021-09-03 08:26:25 INFO  ListTest:62 - ID = 7106611
 ]]></system-out>
   </testcase>
-  <testcase name="clearList[ListThatNotRepeats11, description of no repeat22, JN](1)" classname="ListTests" time="1.851">
-    <system-out><![CDATA[2021-09-02 22:57:15 INFO  ListTests:60 - Clear List Test Started ....
-2021-09-02 22:57:16 INFO  ListTests:63 - List Created and Movie Added ...
-2021-09-02 22:57:16 INFO  ListTests:64 - ID = 7106434
+  <testcase name="createList[asdaf, dhadfghdfh, JN](1)" classname="ListTest" time="0.292">
+    <system-out><![CDATA[2021-09-03 08:26:26 INFO  ListTest:21 - Creating List ...
 ]]></system-out>
   </testcase>
-  <testcase name="clearList[ThisIsATestList11, desc of test list22, ES](2)" classname="ListTests" time="5.667">
-    <system-out><![CDATA[2021-09-02 22:57:17 INFO  ListTests:60 - Clear List Test Started ....
-2021-09-02 22:57:18 INFO  ListTests:63 - List Created and Movie Added ...
-2021-09-02 22:57:18 INFO  ListTests:64 - ID = 7106435
+  <testcase name="deleteList[DeleteThisList1123, description certain123, JN](1)" classname="ListTest" time="0.847">
+    <system-out><![CDATA[2021-09-03 08:26:26 INFO  ListTest:74 - Delete List Test Started ....
+2021-09-03 08:26:26 INFO  ListTest:77 - List Created  ...
+2021-09-03 08:26:26 INFO  ListTest:78 - ID = 7106613
 ]]></system-out>
   </testcase>
-  <testcase name="createList[ListThatNotRepeats, description of no repeat2, JN](1)" classname="ListTests" time="0.404">
-    <system-out><![CDATA[2021-09-02 22:57:23 INFO  ListTests:24 - Creating List ...
+  <testcase name="getDetailsOfList[7105904, juankg214](1)" classname="ListTest" time="0.26">
+    <system-out><![CDATA[2021-09-03 08:26:27 INFO  ListTest:31 - Get Details of List Test Started...
 ]]></system-out>
   </testcase>
-  <testcase name="createList[ThisIsATestList, desc of test list2, ES](2)" classname="ListTests" time="0.386">
-    <system-out><![CDATA[2021-09-02 22:57:23 INFO  ListTests:24 - Creating List ...
+  <testcase name="getDetailsOfMovie[20, My Life Without Me, Drama](1)" classname="MovieTest" time="0.197"/>
+  <testcase name="rateMovie[21, 4](1)" classname="MovieTest" time="0.755"/>
+  <testcase name="search[matrix](1)" classname="SearchTest" time="0.158">
+    <system-out><![CDATA[2021-09-03 08:26:28 INFO  SearchTest:18 - Starting search of matrix
 ]]></system-out>
   </testcase>
-  <testcase name="deleteList[DeleteThisList1, description certain, JN](1)" classname="ListTests" time="1.302">
-    <system-out><![CDATA[2021-09-02 22:57:24 INFO  ListTests:76 - Delete List Test Started ....
-2021-09-02 22:57:24 INFO  ListTests:79 - List Created  ...
-2021-09-02 22:57:24 INFO  ListTests:80 - ID = 7106438
+  <testcase name="search[terror](2)" classname="SearchTest" time="0.166">
+    <system-out><![CDATA[2021-09-03 08:26:28 INFO  SearchTest:18 - Starting search of terror
 ]]></system-out>
   </testcase>
-  <testcase name="deleteList[This should be deleted , decs not certain, ES](2)" classname="ListTests" time="1.75">
-    <system-out><![CDATA[2021-09-02 22:57:25 INFO  ListTests:76 - Delete List Test Started ....
-2021-09-02 22:57:26 INFO  ListTests:79 - List Created  ...
-2021-09-02 22:57:26 INFO  ListTests:80 - ID = 7106439
-]]></system-out>
-  </testcase>
-  <testcase name="getDetailsOfList[7105904, juankg214](1)" classname="ListTests" time="0.769">
-    <system-out><![CDATA[2021-09-02 22:57:27 INFO  ListTests:34 - Get Details of List Test Started...
-]]></system-out>
-  </testcase>
-  <testcase name="getDetailsOfMovie[20, My Life Without Me, Drama](1)" classname="MovieTests" time="0.265"/>
-  <testcase name="rateMovie[21, 4](1)" classname="MovieTests" time="0.311"/>
 </testsuite>

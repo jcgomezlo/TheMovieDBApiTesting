@@ -1,11 +1,20 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 14, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 40.409 s <<< FAILURE! - in TestSuite
-AuthenticationTests.loginSuccessful[juankg214, lapiz453](1)  Time elapsed: 1.285 s  <<< FAILURE!
+Tests run: 12, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 24.037 s <<< FAILURE! - in TestSuite
+AuthenticationTest.loginSuccessful[juankg214, lapiz453](1)  Time elapsed: 0.797 s  <<< FAILURE!
 java.lang.AssertionError: 
 1 expectation failed.
 Expected status code <200> but was <401>.
 
-	at AuthenticationTests.loginSuccessful(AuthenticationTests.java:18)
+	at AuthenticationTest.loginSuccessful(AuthenticationTest.java:32)
+
+ListTest.addMovieToList[ListThatNotRepeats56, description of no repeat46541, JN](1)  Time elapsed: 0.303 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path list_id doesn't match.
+Expected: not null
+  Actual: null
+
+	at ListTest.addMovieToList(ListTest.java:44)
 

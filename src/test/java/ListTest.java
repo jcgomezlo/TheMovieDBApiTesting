@@ -37,7 +37,7 @@ public class ListTest extends ListsDataProvider {
 
     }
 
-    @Test(dataProvider = "ListValid")
+    @Test(dataProvider = "ListAddMovie")
     public void addMovieToList(String name, String description, String language){
         LOGGER.info("Add Movie to List Test Started ....");
 

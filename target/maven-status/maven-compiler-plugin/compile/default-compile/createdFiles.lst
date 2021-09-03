@@ -6,6 +6,7 @@ entities\pojos\ListRoute.class
 entities\pojos\List.class
 entities\pojos\Route.class
 utils\RouteInstance.class
+entities\pojos\SearchRoute.class
 utils\reader\PropertiesReader.class
 entities\pojos\UserAuthentication.class
 utils\PathConstructor.class

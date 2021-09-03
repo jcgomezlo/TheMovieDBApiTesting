@@ -23,4 +23,9 @@ public class ListsDataProvider  {
     public Object[][] ListDetails() {
         return DataDeliver.getInstance("data/data.xlsx").getData("ListDetails");
     }
+
+    @DataProvider(name = "ListAddMovie")
+    public Object[][] ListAddMovie() {
+        return DataDeliver.getInstance("data/data.xlsx").getData("ListsAddMovie");
+    }
 }

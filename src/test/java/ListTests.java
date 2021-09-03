@@ -55,7 +55,7 @@ public class ListTests extends ListsDataProvider {
         LOGGER.info("Movie Showing in details ...");
     }
 
-    @Test(dataProvider = "ListValid")
+    @Test(dataProvider = "ListsToClear")
     public void clearList(String name, String description, String language){
         LOGGER.info("Clear List Test Started ....");
 
@@ -71,7 +71,7 @@ public class ListTests extends ListsDataProvider {
         ListUtils.validateListHasThisItems(id,0);
     }
 
-    @Test(dataProvider = "ListValid")
+    @Test(dataProvider = "ListsToDelete")
     public void deleteList(String name, String description, String language){
         LOGGER.info("Delete List Test Started ....");
 

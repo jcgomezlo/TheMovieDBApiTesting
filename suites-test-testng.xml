@@ -4,6 +4,7 @@
     <test name="Suit">
         <parameter name="test-name" value="Test One"/>
         <classes>
+            <class name="entities.Hooks"></class>
             <class name="AuthenticationTests" />
             <class name="ListTests" />
             <class name="MovieTests" />

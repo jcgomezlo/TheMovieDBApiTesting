@@ -9,6 +9,16 @@ public class ListsDataProvider  {
         return DataDeliver.getInstance("data/data.xlsx").getData("Lists");
     }
 
+    @DataProvider(name = "ListsToDelete")
+    public Object[][] ListsToDelete() {
+        return DataDeliver.getInstance("data/data.xlsx").getData("ListsDelete");
+    }
+
+    @DataProvider(name = "ListsToClear")
+    public Object[][] ListsToClear() {
+        return DataDeliver.getInstance("data/data.xlsx").getData("ListsClear");
+    }
+
     @DataProvider(name = "ListDetails")
     public Object[][] ListDetails() {
         return DataDeliver.getInstance("data/data.xlsx").getData("ListDetails");

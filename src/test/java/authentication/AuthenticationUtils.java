@@ -6,8 +6,8 @@ public class AuthenticationUtils {
     public static final String SUCCESS_PAYLOAD = "success";
     public static final String SESSION_BODY_PAYLOAD = "session_id";
     public static final String REQUEST_TOKEN_PAYLOAD = "request_token";
-    public static final String USER_ENV = "juankg214";//System.getenv("USER1_MOVIEDB");
-    public static final String PASSWORD_ENV = "lapiz453"; //System.getenv("PASS1_MOVIEDB");
+    public static final String USER_ENV = System.getenv("USER1_MOVIEDB");
+    public static final String PASSWORD_ENV = System.getenv("PASS1_MOVIEDB");
     private static String sessionId;
 
 

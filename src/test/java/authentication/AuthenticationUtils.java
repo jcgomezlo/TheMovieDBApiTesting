@@ -8,21 +8,24 @@ public class AuthenticationUtils {
     public static final String REQUEST_TOKEN_PAYLOAD = "request_token";
     public static final String USER_ENV = "juankg214";//System.getenv("USER1_MOVIEDB");
     public static final String PASSWORD_ENV = "lapiz453"; //System.getenv("PASS1_MOVIEDB");
-    private static String SessionId;
+    private static String sessionId;
 
 
     public static String getRequestToken(){
         return AuthenticationAPI.getRequestToken().extract().path(REQUEST_TOKEN_PAYLOAD);
     }
 
-    public static void setSessionId(String userName, String password){
+    private static String setSessionId(String userName, String password){
         String requestToken = getRequestToken();
         AuthenticationAPI.authenticateCredentials(userName,password,requestToken);
-        SessionId = AuthenticationAPI.getSessionId(requestToken).extract().path(SESSION_BODY_PAYLOAD);
+        return AuthenticationAPI.getSessionId(requestToken).extract().path(SESSION_BODY_PAYLOAD);
     }
 
     public static String getSessionId(){
-        return SessionId;
+        if(sessionId == null){
+            sessionId = setSessionId("jcgomezlo","lapizlapiz");
+        }
+         return sessionId;
     }
 
 

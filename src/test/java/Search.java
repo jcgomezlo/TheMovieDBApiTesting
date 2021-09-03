@@ -1,4 +1,4 @@
-import data.MoviesProvider;
+import movies.MoviesProvider;
 import io.restassured.http.ContentType;
 import org.apache.log4j.Logger;
 

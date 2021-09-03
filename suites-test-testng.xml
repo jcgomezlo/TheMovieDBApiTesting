@@ -6,6 +6,7 @@
         <classes>
             <class name="AuthenticationTests" />
             <class name="ListTests" />
+            <class name="MovieTests" />
         </classes>
     </test>
 </suite>

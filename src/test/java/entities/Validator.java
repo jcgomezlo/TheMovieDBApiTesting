@@ -2,10 +2,22 @@ package entities;
 
 import io.qameta.allure.Step;
 import io.restassured.response.ValidatableResponse;
+import org.apache.http.HttpStatus;
 
 import static org.hamcrest.Matchers.*;
 
 public class Validator {
+
+
+
+    public static void assertStatusCodeOK(ValidatableResponse res){
+        statusCodeEquals(res, HttpStatus.SC_OK);
+    }
+
+    public static void assertStatusCodeCreated(ValidatableResponse res){
+        statusCodeEquals(res, HttpStatus.SC_CREATED);
+    }
+
     @Step("Validate Status Code")
     public static void statusCodeEquals(ValidatableResponse res, int code){
         res.assertThat().statusCode(code);

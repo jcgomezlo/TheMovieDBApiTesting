@@ -2,7 +2,6 @@ package lists;
 
 import authentication.AuthenticationUtils;
 import com.google.gson.Gson;
-import entities.Session;
 import entities.pojos.List;
 import io.restassured.http.ContentType;
 import io.restassured.response.ValidatableResponse;
@@ -16,7 +15,7 @@ public class ListAPI {
     private static Gson gson = new Gson();
 
 
-    public static ValidatableResponse postList(String name, String description, String language) {
+    public static ValidatableResponse postList( String name, String description, String language) {
         List list = new List(name,description,language);
         return given()
                 .contentType(ContentType.JSON)
@@ -36,7 +35,7 @@ public class ListAPI {
                 .then();
     }
 
-    public static ValidatableResponse postMovieToList(int listId, String movieId) {
+    public static ValidatableResponse postMovieToList( int listId, String movieId) {
         JSONObject request = new JSONObject();
         request.put("media_id",movieId);
         return given()
@@ -54,6 +53,15 @@ public class ListAPI {
                 .accept(ContentType.JSON)
                 .when()
                 .post(path.getClearListListEndPoint(AuthenticationUtils.getSessionId(), String.valueOf(listId)))
+                .then();
+    }
+
+    public static ValidatableResponse deleteList(int listId) {
+        return given()
+                .contentType(ContentType.JSON)
+                .accept(ContentType.JSON)
+                .when()
+                .delete(path.getDeleteListEndPoint( AuthenticationUtils.getSessionId(), String.valueOf(listId)))
                 .then();
     }
 

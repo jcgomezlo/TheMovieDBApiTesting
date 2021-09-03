@@ -8,7 +8,7 @@ public class PathConstructor {
 
     public static void main(String[] args){
         PathConstructor pathConstructor = new PathConstructor();
-        System.out.println(pathConstructor.getClearListListEndPoint("asdasda","123"));
+        System.out.println(pathConstructor.postMovieRate("1231414","20"));
     }
 
     public PathConstructor(){
@@ -44,8 +44,20 @@ public class PathConstructor {
         return construct(path.getList().getBase() + "/" + listId + path.getList().getClearList() , sessionId) + "&confirm=true";
     }
 
+    public String getDeleteListEndPoint(String sessionId, String listId){
+        return construct(path.getList().getBase() + "/" + listId , sessionId);
+    }
+
     public String getDetailsOfList(String listId){
         return construct(path.getList().getBase() + "/" + listId);
+    }
+
+    public String getMovieDetails(String movieId){
+        return construct(path.getMovie().getBase() + "/" + movieId);
+    }
+
+    public String postMovieRate(String sessionId, String id){
+        return construct(path.getMovie().getBase() + "/" + id  + path.getMovie().getRateMovie() , sessionId);
     }
 
     public String getSearchEndPoint(String movie){

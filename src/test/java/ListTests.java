@@ -10,7 +10,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import utils.PathConstructor;
 
-
+import static entities.Utils.*;
 import static entities.Validator.*;
 import static lists.ListUtils.*;
 
@@ -18,12 +18,6 @@ public class ListTests extends ListsDataProvider {
     private static PathConstructor path = new PathConstructor();
     private static Logger LOGGER = Logger.getLogger(ListTests.class);
 
-    @BeforeClass
-    public void setup(){
-        LOGGER.info("setup for cases");
-        AuthenticationUtils.setSessionId(AuthenticationUtils.USER_ENV, AuthenticationUtils.PASSWORD_ENV);
-        LOGGER.info("Session ID: " + AuthenticationUtils.getSessionId());
-    }
 
     @Test(dataProvider = "ListValid")
     public void createList(String name, String description, String language){
@@ -65,7 +59,7 @@ public class ListTests extends ListsDataProvider {
     public void clearList(String name, String description, String language){
         LOGGER.info("Clear List Test Started ....");
 
-        int id = ListUtils.addMovieToList(name,description,language,"18");
+        int id = ListUtils.addMovieToList( name,description,language,"18");
         LOGGER.info("List Created and Movie Added ...");
         LOGGER.info("ID = " + id);
 
@@ -75,6 +69,18 @@ public class ListTests extends ListsDataProvider {
         statusCodeEquals(responseClearList,HttpStatus.SC_CREATED);
 
         ListUtils.validateListHasThisItems(id,0);
+    }
+
+    @Test(dataProvider = "ListValid")
+    public void deleteList(String name, String description, String language){
+        LOGGER.info("Delete List Test Started ....");
+
+        int id = ListUtils.getListId( name, description, language);
+        LOGGER.info("List Created  ...");
+        LOGGER.info("ID = " + id);
+
+        ListAPI.deleteList(id);
+        ListUtils.assertListDoesntExist(id);
     }
 
 

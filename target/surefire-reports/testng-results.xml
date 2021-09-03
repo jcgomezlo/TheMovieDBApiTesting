@@ -1,13 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
+<testng-results skipped="0" failed="0" ignored="0" total="14" passed="14">
   <reporter-output>
   </reporter-output>
-  <suite name="API Challenge" duration-ms="23062" started-at="2021-09-02T16:55:54 COT" finished-at="2021-09-02T16:56:17 COT">
+  <suite name="API Challenge" duration-ms="25591" started-at="2021-09-02T22:33:37 COT" finished-at="2021-09-02T22:34:03 COT">
     <groups>
     </groups>
-    <test name="Suit" duration-ms="23062" started-at="2021-09-02T16:55:54 COT" finished-at="2021-09-02T16:56:17 COT">
+    <test name="Suit" duration-ms="25591" started-at="2021-09-02T22:33:37 COT" finished-at="2021-09-02T22:34:03 COT">
+      <class name="MovieTests">
+        <test-method status="PASS" signature="getDetailsOfMovie(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:MovieTests@22b00077]" name="getDetailsOfMovie" duration-ms="168" started-at="2021-09-02T22:34:02 COT" data-provider="MovieDetails" finished-at="2021-09-02T22:34:02 COT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[My Life Without Me]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Drama]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDetailsOfMovie -->
+        <test-method status="PASS" signature="rateMovie(java.lang.String,java.lang.String)[pri:0, instance:MovieTests@22b00077]" name="rateMovie" duration-ms="231" started-at="2021-09-02T22:34:02 COT" data-provider="MovieRate" finished-at="2021-09-02T22:34:03 COT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[21]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rateMovie -->
+      </class> <!-- MovieTests -->
       <class name="AuthenticationTests">
-        <test-method status="PASS" signature="loginInvalid(java.lang.String,java.lang.String)[pri:0, instance:AuthenticationTests@57e2d15c]" name="loginInvalid" duration-ms="14048" started-at="2021-09-02T16:55:56 COT" data-provider="InvalidCredentials" finished-at="2021-09-02T16:56:10 COT">
+        <test-method status="PASS" signature="loginInvalid(java.lang.String,java.lang.String)[pri:0, instance:AuthenticationTests@1cafb30]" name="loginInvalid" duration-ms="14290" started-at="2021-09-02T22:33:39 COT" data-provider="InvalidCredentials" finished-at="2021-09-02T22:33:53 COT">
           <params>
             <param index="0">
               <value>
@@ -23,7 +62,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginInvalid -->
-        <test-method status="PASS" signature="loginInvalid(java.lang.String,java.lang.String)[pri:0, instance:AuthenticationTests@57e2d15c]" name="loginInvalid" duration-ms="625" started-at="2021-09-02T16:56:10 COT" data-provider="InvalidCredentials" finished-at="2021-09-02T16:56:11 COT">
+        <test-method status="PASS" signature="loginInvalid(java.lang.String,java.lang.String)[pri:0, instance:AuthenticationTests@1cafb30]" name="loginInvalid" duration-ms="661" started-at="2021-09-02T22:33:53 COT" data-provider="InvalidCredentials" finished-at="2021-09-02T22:33:54 COT">
           <params>
             <param index="0">
               <value>
@@ -39,7 +78,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginInvalid -->
-        <test-method status="PASS" signature="loginSuccessful(java.lang.String,java.lang.String)[pri:0, instance:AuthenticationTests@57e2d15c]" name="loginSuccessful" duration-ms="912" started-at="2021-09-02T16:56:11 COT" data-provider="ValidCredentials" finished-at="2021-09-02T16:56:11 COT">
+        <test-method status="PASS" signature="loginSuccessful(java.lang.String,java.lang.String)[pri:0, instance:AuthenticationTests@1cafb30]" name="loginSuccessful" duration-ms="747" started-at="2021-09-02T22:33:54 COT" data-provider="ValidCredentials" finished-at="2021-09-02T22:33:55 COT">
           <params>
             <param index="0">
               <value>
@@ -57,20 +96,16 @@
         </test-method> <!-- loginSuccessful -->
       </class> <!-- AuthenticationTests -->
       <class name="ListTests">
-        <test-method status="PASS" signature="setup()[pri:0, instance:ListTests@4b158e16]" name="setup" is-config="true" duration-ms="703" started-at="2021-09-02T16:56:11 COT" finished-at="2021-09-02T16:56:12 COT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="addMovieToList(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ListTests@4b158e16]" name="addMovieToList" duration-ms="862" started-at="2021-09-02T16:56:12 COT" data-provider="ListValid" finished-at="2021-09-02T16:56:13 COT">
+        <test-method status="PASS" signature="addMovieToList(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ListTests@753b6846]" name="addMovieToList" duration-ms="1555" started-at="2021-09-02T22:33:55 COT" data-provider="ListValid" finished-at="2021-09-02T22:33:56 COT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[AnimeList]]>
+                <![CDATA[AnimeList2]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[DBZ, NARUTO]]>
+                <![CDATA[DBZ, NARUTO2]]>
               </value>
             </param>
             <param index="2">
@@ -82,16 +117,16 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addMovieToList -->
-        <test-method status="PASS" signature="addMovieToList(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ListTests@4b158e16]" name="addMovieToList" duration-ms="898" started-at="2021-09-02T16:56:13 COT" data-provider="ListValid" finished-at="2021-09-02T16:56:14 COT">
+        <test-method status="PASS" signature="addMovieToList(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ListTests@753b6846]" name="addMovieToList" duration-ms="950" started-at="2021-09-02T22:33:56 COT" data-provider="ListValid" finished-at="2021-09-02T22:33:57 COT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[NovelasList]]>
+                <![CDATA[NovelasList2]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[PasionDeGavilanes]]>
+                <![CDATA[PasionDeGavilanes2]]>
               </value>
             </param>
             <param index="2">
@@ -103,16 +138,16 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addMovieToList -->
-        <test-method status="PASS" signature="clearList(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ListTests@4b158e16]" name="clearList" duration-ms="1207" started-at="2021-09-02T16:56:14 COT" data-provider="ListValid" finished-at="2021-09-02T16:56:15 COT">
+        <test-method status="PASS" signature="clearList(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ListTests@753b6846]" name="clearList" duration-ms="1217" started-at="2021-09-02T22:33:57 COT" data-provider="ListValid" finished-at="2021-09-02T22:33:58 COT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[AnimeList]]>
+                <![CDATA[AnimeList2]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[DBZ, NARUTO]]>
+                <![CDATA[DBZ, NARUTO2]]>
               </value>
             </param>
             <param index="2">
@@ -124,16 +159,16 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearList -->
-        <test-method status="PASS" signature="clearList(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ListTests@4b158e16]" name="clearList" duration-ms="1253" started-at="2021-09-02T16:56:15 COT" data-provider="ListValid" finished-at="2021-09-02T16:56:16 COT">
+        <test-method status="PASS" signature="clearList(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ListTests@753b6846]" name="clearList" duration-ms="1347" started-at="2021-09-02T22:33:58 COT" data-provider="ListValid" finished-at="2021-09-02T22:34:00 COT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[NovelasList]]>
+                <![CDATA[NovelasList2]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[PasionDeGavilanes]]>
+                <![CDATA[PasionDeGavilanes2]]>
               </value>
             </param>
             <param index="2">
@@ -145,16 +180,16 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearList -->
-        <test-method status="PASS" signature="createList(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ListTests@4b158e16]" name="createList" duration-ms="258" started-at="2021-09-02T16:56:16 COT" data-provider="ListValid" finished-at="2021-09-02T16:56:17 COT">
+        <test-method status="PASS" signature="createList(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ListTests@753b6846]" name="createList" duration-ms="276" started-at="2021-09-02T22:34:00 COT" data-provider="ListValid" finished-at="2021-09-02T22:34:00 COT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[AnimeList]]>
+                <![CDATA[AnimeList2]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[DBZ, NARUTO]]>
+                <![CDATA[DBZ, NARUTO2]]>
               </value>
             </param>
             <param index="2">
@@ -166,16 +201,16 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createList -->
-        <test-method status="PASS" signature="createList(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ListTests@4b158e16]" name="createList" duration-ms="301" started-at="2021-09-02T16:56:17 COT" data-provider="ListValid" finished-at="2021-09-02T16:56:17 COT">
+        <test-method status="PASS" signature="createList(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ListTests@753b6846]" name="createList" duration-ms="308" started-at="2021-09-02T22:34:00 COT" data-provider="ListValid" finished-at="2021-09-02T22:34:00 COT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[NovelasList]]>
+                <![CDATA[NovelasList2]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[PasionDeGavilanes]]>
+                <![CDATA[PasionDeGavilanes2]]>
               </value>
             </param>
             <param index="2">
@@ -187,7 +222,49 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createList -->
-        <test-method status="PASS" signature="getDetailsOfList(java.lang.String,java.lang.String)[pri:0, instance:ListTests@4b158e16]" name="getDetailsOfList" duration-ms="234" started-at="2021-09-02T16:56:17 COT" data-provider="ListDetails" finished-at="2021-09-02T16:56:17 COT">
+        <test-method status="PASS" signature="deleteList(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ListTests@753b6846]" name="deleteList" duration-ms="811" started-at="2021-09-02T22:34:00 COT" data-provider="ListValid" finished-at="2021-09-02T22:34:01 COT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AnimeList2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[DBZ, NARUTO2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[JN]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteList -->
+        <test-method status="PASS" signature="deleteList(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ListTests@753b6846]" name="deleteList" duration-ms="794" started-at="2021-09-02T22:34:01 COT" data-provider="ListValid" finished-at="2021-09-02T22:34:02 COT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NovelasList2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PasionDeGavilanes2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ES]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteList -->
+        <test-method status="PASS" signature="getDetailsOfList(java.lang.String,java.lang.String)[pri:0, instance:ListTests@753b6846]" name="getDetailsOfList" duration-ms="227" started-at="2021-09-02T22:34:02 COT" data-provider="ListDetails" finished-at="2021-09-02T22:34:02 COT">
           <params>
             <param index="0">
               <value>

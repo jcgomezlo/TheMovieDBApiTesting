@@ -9,5 +9,4 @@ utils\RouteInstance.class
 utils\reader\PropertiesReader.class
 entities\pojos\UserAuthentication.class
 utils\PathConstructor.class
-entities\Session.class
 utils\DataDeliver.class

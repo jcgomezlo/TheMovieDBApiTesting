@@ -14,6 +14,8 @@ public class ListUtils {
     public static final String STATUS_MESSAGE_ADDED = "The item/record was updated successfully.";
     public static final String STATUS_MESSAGE_NOT_FOUND = "The resource you requested could not be found.";
     public static final String LIST_ID_PAYLOAD = "list_id";
+    public static final String CREATED_BY_PAYLOAD = "created_by";
+    public static final String ITEMS_PAYLOAD = "items";
 
     @Step("Create List")
     public static int getListId( String name, String description, String language){
@@ -41,6 +43,16 @@ public class ListUtils {
     @Step("Validate List Id Not Null")
     public static void assertListIdNotNull(ValidatableResponse res){
         attributeOfBodyNotNull(res,LIST_ID_PAYLOAD);
+    }
+
+    @Step("Validate List Creator")
+    public static void assertListCreator(ValidatableResponse res, String creator){
+        attributeOfBodyEquals(res,CREATED_BY_PAYLOAD, creator);
+    }
+
+    @Step("Validate List empty")
+    public static void assertListIsEmpty(ValidatableResponse res){
+        sizeOfArrayOfBodyEquals(res,ITEMS_PAYLOAD,0);
     }
 
     @Step("Add Movie To List")

@@ -3,14 +3,12 @@ import io.restassured.response.ValidatableResponse;
 import lists.ListAPI;
 import lists.ListUtils;
 import lists.ListsDataProvider;
-import org.apache.http.HttpStatus;
 import org.apache.log4j.Logger;
 
 import org.testng.annotations.Test;
 import utils.PathConstructor;
 
-import static entities.Utils.*;
-import static entities.Validator.*;
+
 import static lists.ListUtils.*;
 
 public class ListTest extends ListsDataProvider {
@@ -34,8 +32,9 @@ public class ListTest extends ListsDataProvider {
 
         ValidatableResponse res = ListAPI.getListDetails(id);
         Validator.assertStatusCodeOK(res);
-        attributeOfBodyEquals(res,"created_by", createdBy);
-        sizeOfArrayOfBodyEquals(res,"items",0);
+        ListUtils.assertListCreator(res, createdBy);
+        ListUtils.assertListIsEmpty(res);
+
     }
 
     @Test(dataProvider = "ListValid")

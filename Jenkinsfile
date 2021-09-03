@@ -21,8 +21,7 @@ pipeline {
                 }
             }
         }
-    }
-    stage('reports') {
+        stage('reports') {
     steps {
     script {
             allure([
@@ -30,9 +29,11 @@ pipeline {
                     jdk: '',
                     properties: [],
                     reportBuildPolicy: 'ALWAYS',
-                    results: [[path: 'allure-results']]
+                    results: [[path: 'target/allure-results']]
             ])
     }
     }
 }
+    }
+
 }

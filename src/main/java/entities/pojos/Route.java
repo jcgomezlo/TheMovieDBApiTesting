@@ -18,6 +18,9 @@ public class Route {
     @JsonProperty("movies")
     private MovieRoute movie;
 
+    @JsonProperty("search")
+    private SearchRoute search;
+
     public AuthenticationRoute getAuthentication() {
         return authentication;
     }
@@ -56,6 +59,14 @@ public class Route {
 
     public void setApiKey(String apiKey) {
         ApiKey = apiKey;
+    }
+
+    public SearchRoute getSearch() {
+        return search;
+    }
+
+    public void setSearch(SearchRoute search) {
+        this.search = search;
     }
 }
 

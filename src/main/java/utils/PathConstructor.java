@@ -8,7 +8,7 @@ public class PathConstructor {
 
     public static void main(String[] args){
         PathConstructor pathConstructor = new PathConstructor();
-        System.out.println(pathConstructor.postMovieRate("1231414","20"));
+        System.out.println(pathConstructor.getSearchEndPoint("matrix"));
     }
 
     public PathConstructor(){
@@ -61,6 +61,6 @@ public class PathConstructor {
     }
 
     public String getSearchEndPoint(String movie){
-        return construct("path.getSearchPath()") + "&query="+movie;
+        return construct(path.getSearch().getBase() + path.getSearch().getMovie()) + "&query="+movie;
     }
 }

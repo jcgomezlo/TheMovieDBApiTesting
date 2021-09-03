@@ -38,4 +38,9 @@ public class Validator {
         res.assertThat().body(attributeName + ".size()",is(size));
     }
 
+    @Step("Size of Array Greater Thab in Payload")
+    public static void sizeOfArrayOfBodyGreater(ValidatableResponse res, String attributeName, int size){
+        res.assertThat().body(attributeName + ".size()",greaterThan(size));
+    }
+
 }

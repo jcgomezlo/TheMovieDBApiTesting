@@ -1,12 +1,13 @@
+import io.restassured.response.ValidatableResponse;
 import movies.MoviesProvider;
-import io.restassured.http.ContentType;
 import org.apache.log4j.Logger;
 
 import org.testng.annotations.Test;
+import search.SearchAPI;
+import search.SearchUtils;
 import utils.PathConstructor;
-import static org.hamcrest.Matchers.equalTo;
 
-import static io.restassured.RestAssured.given;
+import static entities.Validator.*;
 
 public class Search extends MoviesProvider {
 
@@ -14,17 +15,12 @@ public class Search extends MoviesProvider {
     private static Logger LOGGER = Logger.getLogger(Search.class);
 
     @Test(dataProvider = "Movies")
-    public void search(String movie, String number){
+    public void search(String movie){
 
         LOGGER.info("Starting search of " + movie);
-        given()
-                .contentType(ContentType.JSON)
-                .accept(ContentType.JSON)
-                .when()
-                .get(path.getSearchEndPoint(movie))
-                .then()
-                .statusCode(200)
-                .body("total_results", equalTo(Integer.parseInt(number)));
+        ValidatableResponse response = SearchAPI.getSearchMovie(movie);
+        assertStatusCodeOK(response);
+        SearchUtils.assertNumberOfResultsGreaterThan(response,0);
     }
 
 

@@ -14,5 +14,9 @@
   "movies":{
     "base": "/movie",
     "rateMovie": "/rating"
+  },
+  "search":{
+    "base": "/search",
+    "movie": "/movie"
   }
 }

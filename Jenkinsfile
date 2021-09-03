@@ -15,6 +15,7 @@ pipeline {
             steps {
              catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                 sh 'mvn test'
+                stash name: 'allure-results', includes: 'target/allure-results/*' // save results
                  }
             }
 
@@ -22,7 +23,8 @@ pipeline {
         stage('reports') {
     steps {
     script {
-            allure includeProperties: false, jdk: '', results: [[path: 'allure-results']]
+            unstash 'allure-results' //extract results
+            allure results: [[path: 'target/allure-results']]
     }
     }
 }
